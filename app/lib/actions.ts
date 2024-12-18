@@ -121,7 +121,7 @@ export async function updateInvoice(id: string, prevState: State, formData: Form
           case 'CredentialsSignin':
             return 'Invalid credentials.';
           default:
-            return 'Something went wrong.';
+            return 'Invalid email or password.';
         }
       }
       throw error;
